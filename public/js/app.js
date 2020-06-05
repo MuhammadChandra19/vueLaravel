@@ -37533,7 +37533,10 @@ var staticRenderFns = [
       _c("div", { staticClass: "container" }, [
         _c(
           "nav",
-          { staticClass: "navbar navbar-expand-sm justify-content-between" },
+          {
+            staticClass:
+              "navbar navbar-expand-lg navbar-light justify-content-between"
+          },
           [
             _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
               _c("img", {
@@ -37542,27 +37545,122 @@ var staticRenderFns = [
               })
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "collapse navbar-collapse float-right" }, [
-              _c("div", { staticClass: "navbar-nav ml-auto" }, [
-                _c(
-                  "a",
-                  { staticClass: "nav-item nav-link", attrs: { href: "#" } },
-                  [_vm._v("Home")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticClass: "nav-item nav-link", attrs: { href: "#" } },
-                  [_vm._v("Features")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticClass: "nav-item nav-link", attrs: { href: "#" } },
-                  [_vm._v("Pricing")]
-                )
-              ])
-            ])
+            _c(
+              "button",
+              {
+                staticClass: "navbar-toggler",
+                attrs: {
+                  type: "button",
+                  "data-toggle": "collapse",
+                  "data-target": "#toggleNav",
+                  "aria-controls": "toggleNav",
+                  "aria-expanded": "false",
+                  "aria-label": "Toggle navigation"
+                }
+              },
+              [_c("span", { staticClass: "navbar-toggler-icon" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "collapse navbar-collapse",
+                attrs: { id: "toggleNav" }
+              },
+              [
+                _c("div", { staticClass: "navbar-nav ml-auto" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-item nav-link text-dark",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Hosting")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-item nav-link text-dark",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Domain")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-item nav-link text-dark",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Website")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-item nav-link text-dark",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Server")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-item nav-link text-dark",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Afiliasi")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-item nav-link text-dark",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Promo")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-item nav-link text-dark",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Pembayaran")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-item nav-link text-dark",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Review")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-item nav-link text-dark",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Kontak")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-item nav-link text-dark",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Blog")]
+                  )
+                ])
+              ]
+            )
           ]
         )
       ])
