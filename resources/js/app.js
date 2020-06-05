@@ -22,6 +22,10 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('navbar-component', require('./components/NavbarComponent.vue').default);
 Vue.component('head-section', require('./components/HeadSection.vue').default);
+Vue.component('capability-section', require('./components/CapabilityComponent.vue').default);
+Vue.component('support-section', require('./components/SupportSection.vue').default);
+Vue.component('packet-detail', require('./components/PacketDetail.vue').default);
+Vue.component('packet-container', require('./containers/PacketContainer.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

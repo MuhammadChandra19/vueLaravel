@@ -3,6 +3,35 @@
 
 // Variables
 @import 'variables';
+* {
+color: #4C4C4C;
+}
+@font-face{
+  font-family: Montserrat-Bold;
+  font-weight: 900;
+  src: url("/fonts/montserrat/Montserrat-Bold.otf") format("opentype");
+}
+@font-face{
+  font-family: Montserrat-Regular;
+  src: url("/fonts/montserrat/Montserrat-Regular.otf") format("opentype");
+}
 
+@font-face{
+  font-family: Montserrat-Light;
+  src: url("/fonts/montserrat/Montserrat-Light.otf") format("opentype");
+}
+
+
+.montserrat-bold{
+  font-family: 'Montserrat-Bold';
+}
+
+.monserrat{
+  font-family: 'Montserrat-Regular';
+}
+
+.monserrat-light{
+  font-family: 'Montserrat-Light';
+}
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';

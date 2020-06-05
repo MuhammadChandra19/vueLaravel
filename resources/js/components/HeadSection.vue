@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 p-5">
-          <h1>PHP HOSTING</h1>
+          <h1 class="montserrat-bold">PHP HOSTING</h1>
           <h3>Cepat, Handal, penuh dengan modul php yang anda butuhkan</h3>
           <div class="d-flex">
             <span class="mr-3">

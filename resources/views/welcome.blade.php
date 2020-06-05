@@ -20,6 +20,7 @@
 			<div id="app">
 				<navbar-component></navbar-component>
 				<head-section></head-section>
+				<packet-container></packet-container>
 			</div>
 			<script src="{{asset('js/app.js')}}"></script>
     </body>
