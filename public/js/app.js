@@ -1942,7 +1942,32 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 // import SupportSection from "../components/SupportSection";
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      packs: []
+    };
+  },
+  created: function created() {
+    this.fetchPackages();
+  },
+  computed: {
+    convertCurrency: function convertCurrency(value) {
+      return new Intl.NumberFormat("de-DE").format(value);
+    }
+  },
+  methods: {
+    fetchPackages: function fetchPackages() {
+      var _this = this;
+
+      fetch("api/paket").then(function (res) {
+        return res.json();
+      }).then(function (res) {
+        _this.packs = res.data;
+      });
+    }
+  }
+});
 
 /***/ }),
 
@@ -38140,7 +38165,88 @@ var render = function() {
       _vm._v(" "),
       _vm._m(0),
       _vm._v(" "),
-      _vm._m(1),
+      _c("div", { staticClass: "container mb-5" }, [
+        _c("div", { staticClass: "justify-content-center" }, [
+          _c(
+            "div",
+            { staticClass: "row" },
+            _vm._l(_vm.packs, function(pack) {
+              return _c("div", { key: pack.id, staticClass: "col-lg-3 p-0" }, [
+                _c("div", { staticClass: "border" }, [
+                  _c("div", { staticClass: "border-bottom text-center" }, [
+                    _c("h5", { staticClass: "m-auto p-2 montserrat-bold" }, [
+                      _vm._v(_vm._s(pack.name))
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "border-bottom text-center" }, [
+                    _c(
+                      "p",
+                      { staticStyle: { "text-decoration": "line-through" } },
+                      [
+                        _vm._v(
+                          "Rp " +
+                            _vm._s(
+                              new Intl.NumberFormat("de-DE").format(pack.price)
+                            )
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "span",
+                      { staticClass: "d-flex justify-content-center" },
+                      [
+                        _c("p", [_vm._v("Rp")]),
+                        _vm._v(" "),
+                        _c("h1", { staticClass: "montserrat-bold" }, [
+                          _vm._v(
+                            _vm._s(
+                              new Intl.NumberFormat("de-DE")
+                                .format(pack.price)
+                                .split(".")[0]
+                            )
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "montserrat-bold" }, [
+                          _vm._v(
+                            "." +
+                              _vm._s(
+                                new Intl.NumberFormat("de-DE")
+                                  .format(pack.price)
+                                  .split(".")[1]
+                              )
+                          )
+                        ]),
+                        _vm._v("/bln\n              ")
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "border-bottom text-center mt-3" }, [
+                    _c("p", [
+                      _vm._v(_vm._s(pack.users) + " Pengguna Terdaftar")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "border-bottom text-center mt-3" },
+                    _vm._l(pack.features, function(feature) {
+                      return _c("p", { key: feature }, [
+                        _vm._v(_vm._s(feature))
+                      ])
+                    }),
+                    0
+                  )
+                ])
+              ])
+            }),
+            0
+          )
+        ])
+      ]),
       _vm._v(" "),
       _c("capability-section"),
       _vm._v(" "),
@@ -38160,124 +38266,6 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("h4", [_vm._v("Diskon 40% + Domain dan SSL Gratis untuk Anda")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container mb-5" }, [
-      _c("div", { staticClass: "justify-content-center" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-lg-3 p-0" }, [
-            _c("div", { staticClass: "border" }, [
-              _c("div", { staticClass: "border-bottom text-center" }, [
-                _c("h3", { staticClass: "m-auto p-2" }, [_vm._v("Bayi")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "border-bottom text-center" }, [
-                _c(
-                  "p",
-                  { staticStyle: { "text-decoration": "line-through" } },
-                  [_vm._v("Rp 19.900")]
-                ),
-                _vm._v(" "),
-                _c("span", { staticClass: "d-flex justify-content-center" }, [
-                  _c("p", [_vm._v("Rp")]),
-                  _vm._v(" "),
-                  _c("h1", [_vm._v("14")]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _c("strong", [_vm._v(".900")]),
-                    _vm._v("/bln\n                ")
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-lg-3 p-0" }, [
-            _c("div", { staticClass: "border" }, [
-              _c("div", { staticClass: "border-bottom text-center" }, [
-                _c("h3", { staticClass: "m-auto p-2" }, [_vm._v("Bayi")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "border-bottom text-center" }, [
-                _c(
-                  "p",
-                  { staticStyle: { "text-decoration": "line-through" } },
-                  [_vm._v("Rp 19.900")]
-                ),
-                _vm._v(" "),
-                _c("span", { staticClass: "d-flex justify-content-center" }, [
-                  _c("p", [_vm._v("Rp")]),
-                  _vm._v(" "),
-                  _c("h1", [_vm._v("14")]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _c("strong", [_vm._v(".900")]),
-                    _vm._v("/bln\n                ")
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-lg-3 p-0" }, [
-            _c("div", { staticClass: "border" }, [
-              _c("div", { staticClass: "border-bottom text-center" }, [
-                _c("h3", { staticClass: "m-auto p-2" }, [_vm._v("Bayi")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "border-bottom text-center" }, [
-                _c(
-                  "p",
-                  { staticStyle: { "text-decoration": "line-through" } },
-                  [_vm._v("Rp 19.900")]
-                ),
-                _vm._v(" "),
-                _c("span", { staticClass: "d-flex justify-content-center" }, [
-                  _c("p", [_vm._v("Rp")]),
-                  _vm._v(" "),
-                  _c("h1", [_vm._v("14")]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _c("strong", [_vm._v(".900")]),
-                    _vm._v("/bln\n                ")
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-lg-3 p-0" }, [
-            _c("div", { staticClass: "border" }, [
-              _c("div", { staticClass: "border-bottom text-center" }, [
-                _c("h3", { staticClass: "m-auto p-2" }, [_vm._v("Bayi")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "border-bottom text-center" }, [
-                _c(
-                  "p",
-                  { staticStyle: { "text-decoration": "line-through" } },
-                  [_vm._v("Rp 19.900")]
-                ),
-                _vm._v(" "),
-                _c("span", { staticClass: "d-flex justify-content-center" }, [
-                  _c("p", [_vm._v("Rp")]),
-                  _vm._v(" "),
-                  _c("h1", [_vm._v("14")]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _c("strong", [_vm._v(".900")]),
-                    _vm._v("/bln\n                ")
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ])
     ])
   }
 ]

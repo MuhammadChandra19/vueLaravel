@@ -14,6 +14,14 @@ class Paket extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        // return parent::toArray($request);
+        return [
+            'id' => $this->id,
+            'title' => $this->title,
+            'name' => $this->name,
+            'price' => $this->price,
+            'users' => $this->users,
+            'features' => \explode(",", $this->features)
+        ];
     }
 }

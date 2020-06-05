@@ -1,6 +1,29 @@
 <script>
 // import SupportSection from "../components/SupportSection";
-export default {};
+export default {
+  data() {
+    return {
+      packs: []
+    };
+  },
+  created() {
+    this.fetchPackages();
+  },
+  computed: {
+    convertCurrency(value) {
+      return new Intl.NumberFormat("de-DE").format(value);
+    }
+  },
+  methods: {
+    fetchPackages() {
+      fetch("api/paket")
+        .then(res => res.json())
+        .then(res => {
+          this.packs = res.data;
+        });
+    }
+  }
+};
 </script>
 
 <template>
@@ -13,71 +36,30 @@ export default {};
     <div class="container mb-5">
       <div class="justify-content-center">
         <div class="row">
-          <div class="col-lg-3 p-0">
+          <div class="col-lg-3 p-0" v-for="pack in packs" v-bind:key="pack.id">
             <div class="border">
               <div class="border-bottom text-center">
-                <h3 class="m-auto p-2">Bayi</h3>
+                <h5 class="m-auto p-2 montserrat-bold">{{pack.name}}</h5>
               </div>
               <div class="border-bottom text-center">
-                <p style=" text-decoration: line-through;">Rp 19.900</p>
+                <p
+                  style=" text-decoration: line-through;"
+                >Rp {{new Intl.NumberFormat("de-DE").format(pack.price)}}</p>
                 <span class="d-flex justify-content-center">
                   <p>Rp</p>
-                  <h1>14</h1>
-                  <p>
-                    <strong>.900</strong>/bln
-                  </p>
+                  <h1
+                    class="montserrat-bold"
+                  >{{new Intl.NumberFormat("de-DE").format(pack.price).split(".")[0]}}</h1>
+                  <p
+                    class="montserrat-bold"
+                  >.{{new Intl.NumberFormat("de-DE").format(pack.price).split(".")[1]}}</p>/bln
                 </span>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-3 p-0">
-            <div class="border">
-              <div class="border-bottom text-center">
-                <h3 class="m-auto p-2">Bayi</h3>
+              <div class="border-bottom text-center mt-3">
+                <p>{{pack.users}} Pengguna Terdaftar</p>
               </div>
-              <div class="border-bottom text-center">
-                <p style=" text-decoration: line-through;">Rp 19.900</p>
-                <span class="d-flex justify-content-center">
-                  <p>Rp</p>
-                  <h1>14</h1>
-                  <p>
-                    <strong>.900</strong>/bln
-                  </p>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 p-0">
-            <div class="border">
-              <div class="border-bottom text-center">
-                <h3 class="m-auto p-2">Bayi</h3>
-              </div>
-              <div class="border-bottom text-center">
-                <p style=" text-decoration: line-through;">Rp 19.900</p>
-                <span class="d-flex justify-content-center">
-                  <p>Rp</p>
-                  <h1>14</h1>
-                  <p>
-                    <strong>.900</strong>/bln
-                  </p>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 p-0">
-            <div class="border">
-              <div class="border-bottom text-center">
-                <h3 class="m-auto p-2">Bayi</h3>
-              </div>
-              <div class="border-bottom text-center">
-                <p style=" text-decoration: line-through;">Rp 19.900</p>
-                <span class="d-flex justify-content-center">
-                  <p>Rp</p>
-                  <h1>14</h1>
-                  <p>
-                    <strong>.900</strong>/bln
-                  </p>
-                </span>
+              <div class="border-bottom text-center mt-3">
+                <p v-for="feature in pack.features" v-bind:key="feature">{{feature}}</p>
               </div>
             </div>
           </div>
