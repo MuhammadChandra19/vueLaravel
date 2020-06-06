@@ -9,31 +9,25 @@
             <span class="mr-3">
               <img src="/img/check.png" style="width: 20px;" alt />
             </span>
-            <p>solusi php untuk performa query yang lebih cepat</p>
+            <p class="mb-1">Solusi PHP untuk performa query yang lebih cepat</p>
           </div>
           <div class="d-flex">
             <span class="mr-3">
               <img src="/img/check.png" style="width: 20px;" alt />
             </span>
-            <p>solusi php untuk performa query yang lebih cepat</p>
+            <p class="mb-1">Konsumsi memori yang lebih rendah</p>
           </div>
           <div class="d-flex">
             <span class="mr-3">
               <img src="/img/check.png" style="width: 20px;" alt />
             </span>
-            <p>solusi php untuk performa query yang lebih cepat</p>
+            <p class="mb-1">Support PHP 5.3 PHP 5.4 PHP 5.5 PHP 5.6 PHP 7</p>
           </div>
           <div class="d-flex">
             <span class="mr-3">
               <img src="/img/check.png" style="width: 20px;" alt />
             </span>
-            <p>solusi php untuk performa query yang lebih cepat</p>
-          </div>
-          <div class="d-flex">
-            <span class="mr-3">
-              <img src="/img/check.png" style="width: 20px;" alt />
-            </span>
-            <p>solusi php untuk performa query yang lebih cepat</p>
+            <p class="mb-1">Fitur enkripsi IonCube dan Zend Guard Loaders</p>
           </div>
         </div>
         <div class="col-lg-6 p-5">

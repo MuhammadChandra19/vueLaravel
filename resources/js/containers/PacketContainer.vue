@@ -9,11 +9,6 @@ export default {
   created() {
     this.fetchPackages();
   },
-  computed: {
-    convertCurrency(value) {
-      return new Intl.NumberFormat("de-DE").format(value);
-    }
-  },
   methods: {
     fetchPackages() {
       fetch("api/paket")
@@ -56,7 +51,7 @@ export default {
                 </span>
               </div>
               <div class="border-bottom text-center mt-3">
-                <p>{{pack.users}} Pengguna Terdaftar</p>
+                <p>{{new Intl.NumberFormat("de-DE").format(pack.users)}} Pengguna Terdaftar</p>
               </div>
               <div class="border-bottom text-center mt-3">
                 <p v-for="feature in pack.features" v-bind:key="feature">{{feature}}</p>
@@ -68,5 +63,6 @@ export default {
     </div>
     <capability-section></capability-section>
     <packet-detail></packet-detail>
+    <laravel-support></laravel-support>
   </div>
 </template>

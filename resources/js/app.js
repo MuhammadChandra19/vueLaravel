@@ -25,6 +25,7 @@ Vue.component('head-section', require('./components/HeadSection.vue').default);
 Vue.component('capability-section', require('./components/CapabilityComponent.vue').default);
 Vue.component('support-section', require('./components/SupportSection.vue').default);
 Vue.component('packet-detail', require('./components/PacketDetail.vue').default);
+Vue.component('laravel-support', require('./components/LaravelSupport.vue').default);
 Vue.component('packet-container', require('./containers/PacketContainer.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to

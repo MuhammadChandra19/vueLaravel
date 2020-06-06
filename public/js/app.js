@@ -1951,11 +1951,6 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     this.fetchPackages();
   },
-  computed: {
-    convertCurrency: function convertCurrency(value) {
-      return new Intl.NumberFormat("de-DE").format(value);
-    }
-  },
   methods: {
     fetchPackages: function fetchPackages() {
       var _this = this;
@@ -37707,8 +37702,8 @@ var staticRenderFns = [
                 })
               ]),
               _vm._v(" "),
-              _c("p", [
-                _vm._v("solusi php untuk performa query yang lebih cepat")
+              _c("p", { staticClass: "mb-1" }, [
+                _vm._v("Solusi PHP untuk performa query yang lebih cepat")
               ])
             ]),
             _vm._v(" "),
@@ -37720,8 +37715,8 @@ var staticRenderFns = [
                 })
               ]),
               _vm._v(" "),
-              _c("p", [
-                _vm._v("solusi php untuk performa query yang lebih cepat")
+              _c("p", { staticClass: "mb-1" }, [
+                _vm._v("Konsumsi memori yang lebih rendah")
               ])
             ]),
             _vm._v(" "),
@@ -37733,8 +37728,8 @@ var staticRenderFns = [
                 })
               ]),
               _vm._v(" "),
-              _c("p", [
-                _vm._v("solusi php untuk performa query yang lebih cepat")
+              _c("p", { staticClass: "mb-1" }, [
+                _vm._v("Support PHP 5.3 PHP 5.4 PHP 5.5 PHP 5.6 PHP 7")
               ])
             ]),
             _vm._v(" "),
@@ -37746,21 +37741,8 @@ var staticRenderFns = [
                 })
               ]),
               _vm._v(" "),
-              _c("p", [
-                _vm._v("solusi php untuk performa query yang lebih cepat")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "d-flex" }, [
-              _c("span", { staticClass: "mr-3" }, [
-                _c("img", {
-                  staticStyle: { width: "20px" },
-                  attrs: { src: "/img/check.png", alt: "" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v("solusi php untuk performa query yang lebih cepat")
+              _c("p", { staticClass: "mb-1" }, [
+                _vm._v("Fitur enkripsi IonCube dan Zend Guard Loaders")
               ])
             ])
           ]),
@@ -37769,6 +37751,107 @@ var staticRenderFns = [
             _c("img", {
               attrs: {
                 src: "/svg/illustration banner PHP hosting-01.svg",
+                alt: "bannerPHP"
+              }
+            })
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LaravelSupport.vue?vue&type=template&id=e4de29fe&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/LaravelSupport.vue?vue&type=template&id=e4de29fe& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "border-bottom mb-5" }, [
+      _c("h3", { staticClass: "mb-3 text-center" }, [
+        _vm._v("Mendukung Penuh Framework Laravel")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6 p-5" }, [
+            _c("h5", { staticClass: "mb-3" }, [
+              _vm._v(
+                "Tak perlu menggunakan dedicated server atau VPS yang mahal. Layanan PHP hosting murah kami mendukung penuh framework favorit anda"
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "d-flex" }, [
+              _c("span", { staticClass: "mr-3" }, [
+                _c("img", {
+                  staticStyle: { width: "20px" },
+                  attrs: { src: "/img/check.png", alt: "" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-1" }, [
+                _vm._v("\n            install Laravel\n            "),
+                _c("span", [_vm._v("1 klik")]),
+                _vm._v(" dengan Softaculous Installer.\n          ")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "d-flex" }, [
+              _c("span", { staticClass: "mr-3" }, [
+                _c("img", {
+                  staticStyle: { width: "20px" },
+                  attrs: { src: "/img/check.png", alt: "" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-1" }, [
+                _vm._v("\n            install Laravel\n            "),
+                _c("span", [_vm._v("1 klik")]),
+                _vm._v(" dengan Softaculous Installer.\n          ")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "d-flex" }, [
+              _c("span", { staticClass: "mr-3" }, [
+                _c("img", {
+                  staticStyle: { width: "20px" },
+                  attrs: { src: "/img/check.png", alt: "" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-1" }, [
+                _vm._v("\n            install Laravel\n            "),
+                _c("span", [_vm._v("1 klik")]),
+                _vm._v(" dengan Softaculous Installer.\n          ")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-6 p-5" }, [
+            _c("img", {
+              attrs: {
+                src: "/svg/illustration banner support laravel hosting.svg",
                 alt: "bannerPHP"
               }
             })
@@ -37982,10 +38065,15 @@ var staticRenderFns = [
           _c("div", { staticClass: "p-3 text-center" }, [
             _c("img", {
               staticClass: "w-25",
-              attrs: { src: "/svg/icon PHP Hosting_My SQL.svg", alt: "sql" }
+              attrs: {
+                src: "/svg/icon PHP Hosting_PHP Semua Versi.svg",
+                alt: "sql"
+              }
             }),
             _vm._v(" "),
-            _c("h4", [_vm._v("PHP Semua Versi")]),
+            _c("h4", { staticClass: "montserrat-bold" }, [
+              _vm._v("PHP Semua Versi")
+            ]),
             _vm._v(" "),
             _c("p", [
               _vm._v("Pilih mulai dari PHP 5.3 s/d PHP 7. ubah sesuka anda")
@@ -38000,10 +38088,14 @@ var staticRenderFns = [
               attrs: { src: "/svg/icon PHP Hosting_My SQL.svg", alt: "" }
             }),
             _vm._v(" "),
-            _c("h4", [_vm._v("PHP Semua Versi")]),
+            _c("h4", { staticClass: "montserrat-bold" }, [
+              _vm._v("MySQL Versi 5.6")
+            ]),
             _vm._v(" "),
             _c("p", [
-              _vm._v("Pilih mulai dari PHP 5.3 s/d PHP 7. ubah sesuka anda")
+              _vm._v(
+                "Nikmati MySQL versi terbaru, tercepat dan kaya akan fitur."
+              )
             ])
           ])
         ]),
@@ -38012,13 +38104,17 @@ var staticRenderFns = [
           _c("div", { staticClass: "p-3 text-center" }, [
             _c("img", {
               staticClass: "w-25",
-              attrs: { src: "/svg/icon PHP Hosting_My SQL.svg", alt: "" }
+              attrs: { src: "/svg/icon PHP Hosting_CPanel.svg", alt: "" }
             }),
             _vm._v(" "),
-            _c("h4", [_vm._v("PHP Semua Versi")]),
+            _c("h4", { staticClass: "montserrat-bold" }, [
+              _vm._v("Panel Hosting cPanel")
+            ]),
             _vm._v(" "),
             _c("p", [
-              _vm._v("Pilih mulai dari PHP 5.3 s/d PHP 7. ubah sesuka anda")
+              _vm._v(
+                "Kelola website dengan panel canggih yang familiar di hati anda"
+              )
             ])
           ])
         ]),
@@ -38027,13 +38123,20 @@ var staticRenderFns = [
           _c("div", { staticClass: "p-3 text-center" }, [
             _c("img", {
               staticClass: "w-25",
-              attrs: { src: "/svg/icon PHP Hosting_My SQL.svg", alt: "" }
+              attrs: {
+                src: "/svg/icon PHP Hosting_garansi uptime.svg",
+                alt: ""
+              }
             }),
             _vm._v(" "),
-            _c("h4", [_vm._v("PHP Semua Versi")]),
+            _c("h4", { staticClass: "montserrat-bold" }, [
+              _vm._v("Garansi Uptime 99.9%")
+            ]),
             _vm._v(" "),
             _c("p", [
-              _vm._v("Pilih mulai dari PHP 5.3 s/d PHP 7. ubah sesuka anda")
+              _vm._v(
+                "Data center yang mendukung kelangsungan website anda 24/7"
+              )
             ])
           ])
         ]),
@@ -38042,13 +38145,17 @@ var staticRenderFns = [
           _c("div", { staticClass: "p-3 text-center" }, [
             _c("img", {
               staticClass: "w-25",
-              attrs: { src: "/svg/icon PHP Hosting_My SQL.svg", alt: "" }
+              attrs: { src: "/svg/icon PHP Hosting_InnoDB.svg", alt: "" }
             }),
             _vm._v(" "),
-            _c("h4", [_vm._v("PHP Semua Versi")]),
+            _c("h4", { staticClass: "montserrat-bold" }, [
+              _vm._v("Database InnoDB Unlimited")
+            ]),
             _vm._v(" "),
             _c("p", [
-              _vm._v("Pilih mulai dari PHP 5.3 s/d PHP 7. ubah sesuka anda")
+              _vm._v(
+                "Jumlah dan ukuran database yang tumbuh sesuai dengan kebutuhan anda"
+              )
             ])
           ])
         ]),
@@ -38057,13 +38164,17 @@ var staticRenderFns = [
           _c("div", { staticClass: "p-3 text-center" }, [
             _c("img", {
               staticClass: "w-25",
-              attrs: { src: "/svg/icon PHP Hosting_My SQL.svg", alt: "" }
+              attrs: { src: "/svg/icon PHP Hosting_My SQL remote.svg", alt: "" }
             }),
             _vm._v(" "),
-            _c("h4", [_vm._v("PHP Semua Versi")]),
+            _c("h4", { staticClass: "montserrat-bold" }, [
+              _vm._v("Wild Card Remote MySQL")
+            ]),
             _vm._v(" "),
             _c("p", [
-              _vm._v("Pilih mulai dari PHP 5.3 s/d PHP 7. ubah sesuka anda")
+              _vm._v(
+                "Mendukung sampai dengan max_user_connections dan 100 max_connections."
+              )
             ])
           ])
         ])
@@ -38226,7 +38337,11 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "border-bottom text-center mt-3" }, [
                     _c("p", [
-                      _vm._v(_vm._s(pack.users) + " Pengguna Terdaftar")
+                      _vm._v(
+                        _vm._s(
+                          new Intl.NumberFormat("de-DE").format(pack.users)
+                        ) + " Pengguna Terdaftar"
+                      )
                     ])
                   ]),
                   _vm._v(" "),
@@ -38250,7 +38365,9 @@ var render = function() {
       _vm._v(" "),
       _c("capability-section"),
       _vm._v(" "),
-      _c("packet-detail")
+      _c("packet-detail"),
+      _vm._v(" "),
+      _c("laravel-support")
     ],
     1
   )
@@ -50468,6 +50585,7 @@ Vue.component('head-section', __webpack_require__(/*! ./components/HeadSection.v
 Vue.component('capability-section', __webpack_require__(/*! ./components/CapabilityComponent.vue */ "./resources/js/components/CapabilityComponent.vue")["default"]);
 Vue.component('support-section', __webpack_require__(/*! ./components/SupportSection.vue */ "./resources/js/components/SupportSection.vue")["default"]);
 Vue.component('packet-detail', __webpack_require__(/*! ./components/PacketDetail.vue */ "./resources/js/components/PacketDetail.vue")["default"]);
+Vue.component('laravel-support', __webpack_require__(/*! ./components/LaravelSupport.vue */ "./resources/js/components/LaravelSupport.vue")["default"]);
 Vue.component('packet-container', __webpack_require__(/*! ./containers/PacketContainer.vue */ "./resources/js/containers/PacketContainer.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -50696,6 +50814,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeadSection_vue_vue_type_template_id_6ef5ed4a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeadSection_vue_vue_type_template_id_6ef5ed4a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/LaravelSupport.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/components/LaravelSupport.vue ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LaravelSupport_vue_vue_type_template_id_e4de29fe___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LaravelSupport.vue?vue&type=template&id=e4de29fe& */ "./resources/js/components/LaravelSupport.vue?vue&type=template&id=e4de29fe&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _LaravelSupport_vue_vue_type_template_id_e4de29fe___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LaravelSupport_vue_vue_type_template_id_e4de29fe___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/LaravelSupport.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/LaravelSupport.vue?vue&type=template&id=e4de29fe&":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/components/LaravelSupport.vue?vue&type=template&id=e4de29fe& ***!
+  \***********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LaravelSupport_vue_vue_type_template_id_e4de29fe___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./LaravelSupport.vue?vue&type=template&id=e4de29fe& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LaravelSupport.vue?vue&type=template&id=e4de29fe&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LaravelSupport_vue_vue_type_template_id_e4de29fe___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LaravelSupport_vue_vue_type_template_id_e4de29fe___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
